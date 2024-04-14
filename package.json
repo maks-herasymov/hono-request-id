@@ -1,0 +1,43 @@
+{
+  "name": "hono-request-id",
+  "version": "1.0.0",
+  "description": "Request ID middleware for Hono",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup-node && tsc --emitDeclarationOnly",
+    "format": "prettier --ignore-path .gitignore --ignore-path .prettierignore --write ."
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maks-herasymov/hono-request-id.git"
+  },
+  "homepage": "https://github.com/maks-herasymov/hono-request-id",
+  "author": "Maksym Herasymov <maks@hrsy.wtf> (https://github.com/maks-herasymov)",
+  "keywords": [
+    "hono",
+    "request",
+    "middleware"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
+  "dependencies": {
+    "hyperid": "^3.2.0"
+  },
+  "devDependencies": {
+    "hono": "^4.2.3",
+    "prettier": "^3.2.5",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5"
+  },
+  "peerDependencies": {
+    "hono": ">=4.*"
+  }
+}
